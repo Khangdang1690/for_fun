@@ -9,3 +9,5 @@
 *.pyzw
 *.pyzwz
 *.pyzwzw
+
+.venv/
