@@ -141,6 +141,25 @@ async def example_inputs(agent_name: str) -> None:
                     "user",
                     "Tell me about the US tariffs",
                 )
+        elif agent_name == "linkedin_researcher":
+            if st.button("Find recruiters at Microsoft"):
+                await add_message(
+                    agent_name,
+                    "user",
+                    "Find recruiters and talent acquisition professionals at Microsoft",
+                )
+            if st.button("Find founders at Y Combinator startups"):
+                await add_message(
+                    agent_name,
+                    "user",
+                    "Find founders and CEOs at Y Combinator portfolio companies",
+                )
+            if st.button("Research a LinkedIn profile"):
+                await add_message(
+                    agent_name,
+                    "user",
+                    "Extract detailed information from this LinkedIn profile: https://www.linkedin.com/in/example-person",
+                )
 
 
 async def knowledge_widget(agent_name: str, agent: Agent) -> None:
